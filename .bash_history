@@ -1,37 +1,4 @@
 ls
-ls -l
-cd /work2
-ls
-cd 08213
-cd chahak
-ls
-cd .~/WORK
-cd ~/linux.words
-pwd
-cd stampede2/cse380/hw1
-pwd
-cat
-pwd
-cd .
-pwd
-cd -
-cd ..
-pwd
-cat hw1
-cd hw1
-ls
-cat linux.words
-pwd
-ls
-cd 9248
-ls
-cd ..
-cd 897
-ls
-cat WumpuS
-cd WumpuS
-ks
-ls
 cd ..
 pwd
 cd ..
@@ -997,4 +964,37 @@ vim iter.log
 cat iter.log
 ls
 cat iter.log
+exit
+ls
+git init
+git add .
+git commit -m "first time to use linux to upload my files"
+git remote add origin git@github.com:uvilla-teaching/student-repo-Zhou-spec.git
+git pull origin master
+git push -u origin master
+ls
+clear
+git commit -m "first time to commit on linux system"
+git remote add origin git@github.com:uvilla-teaching/student-repo-Zhou-spec.git
+git pull origin master
+git config --edit
+git config --global user.email "fazhou@utexas.edu"
+git config --global user.name "Zhou-spec"
+git pull origin master
+ls
+ls
+git init
+git add .
+git commit -m "uploading my file to github on linux system"
+git remote add origin https://github.com/uvilla-teaching/student-repo-Zhou-spec.git
+git pull origin master
+git remote add origin https://github.com/Zhou-spec/hw02.git
+git init
+git add .
+git commit -m "uploading my files"
+git remote add origin https://github.com/Zhou-spec/hw02.git
+git pull origin master
+exit
+ls
+pwd
 exit
