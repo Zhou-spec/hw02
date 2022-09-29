@@ -1,0 +1,48 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -o iter.log
+#SBATCH -p skx-normal
+#SBATCH -t 00:15:00
+
+module purge
+module load TACC
+module load launcher
+export LAUNCHER_PLUGIN_DIR=$LAUNCHER_DIR/plugins
+export LAUNCHER_RMI=SLURM
+export LAUNCHER_SCHED=interleaved
+
+start=$(date +%s)
+pi=3.1415926535
+error=100
+iteration=0
+N_chunk=960000000
+num_samples=0
+num_i=0
+
+check=$(bc -l <<< "$error > 0.000005")
+
+while [ $check == 1 ]
+do
+	$LAUNCHER_DIR/paramrun
+	
+	iteration=$(($iteration+1))
+	num_samples=$(($num_samples+$N_chunk))
+	read N_samples N_i N_o pi_estimate nothing_error <<< $(./pi.complied $N_chunk $i)
+	num_i=$(($N_i+$num_i))
+	new_pi=$(bc -l <<< "(4*$num_i)/$num_samples") 
+	middle=$(bc -l <<< "$new_pi-$pi")
+	error=$(bc -l <<< "sqrt($middle*$middle)/$pi")
+	check=$(bc -l <<< "$error > 0.000005")
+	end=$(date +%s)
+	run_time=$(($end-$start))
+	echo "iter: $iteration  num_samples: $num_samples  num_i: $num_i  pi: $new_pi  relative_error: $error  time_accum: $run_time"
+done   
+	
+
+
+
+
+
+
+

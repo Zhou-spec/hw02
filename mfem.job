@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH -N 2
+#SBATCH -n 96
+#SBATCH -o ex5.%j.out
+#SBATCH -J ex5
+#SBATCH -p skx-normal
+#SBATCH -t 00:15:00
+
+module purge
+module load TACC
+module load launcher
+
+export LAUNCHER_PLUGIN_DIR=$LAUNCHER_DIR/plugins
+export LAUNCHER_RMI=SLURM
+
+export LAUNCHER_JOB_FILE=./jobfile1
+
+$LAUNCHER_DIR/paramrun

@@ -1,0 +1,47 @@
+WARNING (09/27/22 16:45:59): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    2
+   Working directory:  /home1/09048/fazhou
+   Processes per host: 48
+   Total processes:    96
+   Total jobs:         7
+   Scheduling method:  dynamic
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+using /tmp/launcher.10349913.hostlist.wedlIlK8 to get hosts
+starting job on c506-094
+starting job on c506-111
+Warning: Permanently added 'c506-111' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'c506-094' (ECDSA) to the list of known hosts.
+Launcher: Task 32 running job 1 on c506-094.stampede2.tacc.utexas.edu (./pi.complied 10)
+Launcher: Task 5 running job 3 on c506-094.stampede2.tacc.utexas.edu (./pi.complied 500)
+Launcher: Task 1 running job 4 on c506-094.stampede2.tacc.utexas.edu (./pi.complied 1000)
+Launcher: Task 19 running job 2 on c506-094.stampede2.tacc.utexas.edu (./pi.complied 100)
+Launcher: Task 61 running job 5 on c506-111.stampede2.tacc.utexas.edu (./pi.complied 5000)
+Launcher: Task 77 running job 6 on c506-111.stampede2.tacc.utexas.edu (./pi.complied 10000)
+Launcher: Task 93 running job 7 on c506-111.stampede2.tacc.utexas.edu (./pi.complied 50000)
+N_samples: 500 N_i: 393 N_o: 107 pi_estimate: 3.144 e_rel: 0.000766271
+N_samples: 1000 N_i: 805 N_o: 195 pi_estimate: 3.22 e_rel: 0.0249578
+N_samples: 10 N_i: 8 N_o: 2 pi_estimate: 3.2 e_rel: 0.0185916
+N_samples: 100 N_i: 81 N_o: 19 pi_estimate: 3.24 e_rel: 0.031324
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Job 2 completed in 0 seconds.
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Job 1 completed in 0 seconds.
+N_samples: 10000 N_i: 7855 N_o: 2145 pi_estimate: 3.142 e_rel: 0.000129622
+N_samples: 5000 N_i: 3953 N_o: 1047 pi_estimate: 3.1624 e_rel: 0.00662316
+N_samples: 50000 N_i: 39165 N_o: 10835 pi_estimate: 3.1332 e_rel: 0.00267151
+Launcher: Job 7 completed in 0 seconds.
+Launcher: Job 5 completed in 0 seconds.
+Launcher: Job 6 completed in 0 seconds.
+Launcher: Task 19 done. Exiting.
+Launcher: Task 5 done. Exiting.
+Launcher: Task 1 done. Exiting.
+Launcher: Task 32 done. Exiting.
+Launcher: Task 93 done. Exiting.
+Launcher: Task 61 done. Exiting.
+Launcher: Task 77 done. Exiting.
+Launcher: Done. Job exited without errors

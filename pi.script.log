@@ -1,0 +1,47 @@
+WARNING (09/27/22 16:42:35): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    2
+   Working directory:  /home1/09048/fazhou
+   Processes per host: 48
+   Total processes:    96
+   Total jobs:         7
+   Scheduling method:  dynamic
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+using /tmp/launcher.10349912.hostlist.Fnii1pxB to get hosts
+starting job on c478-004
+starting job on c478-104
+Warning: Permanently added 'c478-104' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'c478-004' (ECDSA) to the list of known hosts.
+Launcher: Task 46 running job 3 on c478-004.stampede2.tacc.utexas.edu (./pi.sh 500)
+Launcher: Task 13 running job 2 on c478-004.stampede2.tacc.utexas.edu (./pi.sh 100)
+Launcher: Task 3 running job 1 on c478-004.stampede2.tacc.utexas.edu (./pi.sh 10)
+Launcher: Task 44 running job 4 on c478-004.stampede2.tacc.utexas.edu (./pi.sh 1000)
+Launcher: Task 42 running job 5 on c478-004.stampede2.tacc.utexas.edu (./pi.sh 5000)
+Launcher: Task 63 running job 7 on c478-104.stampede2.tacc.utexas.edu (./pi.sh 50000)
+Launcher: Task 67 running job 6 on c478-104.stampede2.tacc.utexas.edu (./pi.sh 10000)
+N_samples: 10 N_i: 10 N_o: 0 pi_estimated: 4.00000000000000000000 e_rel: .27323954477155451496
+Launcher: Job 1 completed in 1 seconds.
+Launcher: Task 3 done. Exiting.
+N_samples: 100 N_i: 76 N_o: 24 pi_estimated: 3.04000000000000000000 e_rel: .03233794597361856862
+Launcher: Job 2 completed in 2 seconds.
+Launcher: Task 13 done. Exiting.
+N_samples: 500 N_i: 380 N_o: 120 pi_estimated: 3.04000000000000000000 e_rel: .03233794597361856862
+Launcher: Job 3 completed in 8 seconds.
+Launcher: Task 46 done. Exiting.
+N_samples: 1000 N_i: 780 N_o: 220 pi_estimated: 3.12000000000000000000 e_rel: .00687315507818747832
+Launcher: Job 4 completed in 16 seconds.
+Launcher: Task 44 done. Exiting.
+N_samples: 5000 N_i: 3920 N_o: 1080 pi_estimated: 3.13600000000000000000 e_rel: .00178019689910126026
+Launcher: Job 5 completed in 80 seconds.
+Launcher: Task 42 done. Exiting.
+N_samples: 10000 N_i: 7841 N_o: 2159 pi_estimated: 3.13640000000000000000 e_rel: .00165287294462410481
+Launcher: Job 6 completed in 153 seconds.
+Launcher: Task 67 done. Exiting.
+N_samples: 50000 N_i: 39385 N_o: 10615 pi_estimated: 3.15080000000000000000 e_rel: .00293078941655349144
+Launcher: Job 7 completed in 801 seconds.
+Launcher: Task 63 done. Exiting.
+Launcher: Done. Job exited without errors
